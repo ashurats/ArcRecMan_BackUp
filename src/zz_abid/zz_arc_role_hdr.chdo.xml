@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CHDO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CHDO>
+    <REPORTS_GENERATED>
+     <TCDRPS>
+      <OBJECT>ZZ_ARC_ROLE_HDR</OBJECT>
+      <REPORTNAME>ZZ_ARC_ROLE_HDR</REPORTNAME>
+      <TEXTCASE>X</TEXTCASE>
+      <ARBGEB>CD</ARBGEB>
+      <FEHLERNR>600</FEHLERNR>
+      <FGRP>ZZ_ARC_ROLE_HDR</FGRP>
+      <PREFIX>Y</PREFIX>
+      <UPDATE_FLG>2</UPDATE_FLG>
+     </TCDRPS>
+    </REPORTS_GENERATED>
+    <OBJECTS>
+     <TCDOBS>
+      <OBJECT>ZZ_ARC_ROLE_HDR</OBJECT>
+      <TABNAME>ZCOMP_ROLE_HDR</TABNAME>
+      <MULTCASE>X</MULTCASE>
+      <DOCUD_NOIF>X</DOCUD_NOIF>
+     </TCDOBS>
+    </OBJECTS>
+    <OBJECTS_TEXT>
+     <TCDOBTS>
+      <SPRAS>E</SPRAS>
+      <OBJECT>ZZ_ARC_ROLE_HDR</OBJECT>
+      <OBTEXT>Change Document for ZCOMP_ROLE_HDR table</OBTEXT>
+     </TCDOBTS>
+    </OBJECTS_TEXT>
+   </CHDO>
+  </asx:values>
+ </asx:abap>
+</abapGit>

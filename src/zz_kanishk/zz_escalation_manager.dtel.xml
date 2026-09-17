@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZ_ESCALATION_MANAGER</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR10</DOMNAME>
+    <HEADLEN>26</HEADLEN>
+    <SCRLEN1>08</SCRLEN1>
+    <SCRLEN2>18</SCRLEN2>
+    <SCRLEN3>21</SCRLEN3>
+    <DDTEXT>Escalation Manager ID</DDTEXT>
+    <REPTEXT>Escalation Manager User ID</REPTEXT>
+    <SCRTEXT_S>Esc. Man</SCRTEXT_S>
+    <SCRTEXT_M>Escalation Manager</SCRTEXT_M>
+    <SCRTEXT_L>Escalation Manager ID</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

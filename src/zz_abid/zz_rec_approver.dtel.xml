@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZ_REC_APPROVER</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR50</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>40</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>25</SCRLEN2>
+    <SCRLEN3>35</SCRLEN3>
+    <DDTEXT>Rec Manager Approver / Rejector</DDTEXT>
+    <REPTEXT>Rec Manager Approver / Rejector</REPTEXT>
+    <SCRTEXT_S>Rec Manage</SCRTEXT_S>
+    <SCRTEXT_M>Rec Manager Appr/Rej</SCRTEXT_M>
+    <SCRTEXT_L>Rec Manager Approver / Rejector</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Rec Manager Genehmiger</DDTEXT>
+     <REPTEXT>Rec Manager Genehmiger</REPTEXT>
+     <SCRTEXT_S>Genehmiger</SCRTEXT_S>
+     <SCRTEXT_M>Rec Genehmiger</SCRTEXT_M>
+     <SCRTEXT_L>Rec Manager Genehmiger</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

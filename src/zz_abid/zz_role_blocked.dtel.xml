@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZ_ROLE_BLOCKED</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR30</DOMNAME>
+    <HEADLEN>40</HEADLEN>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>35</SCRLEN3>
+    <DDTEXT>Failed Transport Attempts (Role)</DDTEXT>
+    <REPTEXT>Failed Transport Attempts (Role)</REPTEXT>
+    <SCRTEXT_M>Failed TR Att Role</SCRTEXT_M>
+    <SCRTEXT_L>Failed Transport Attempts (Role)</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>gesperrte Rolle</DDTEXT>
+     <REPTEXT>gesperrte Rolle von PFCG</REPTEXT>
+     <SCRTEXT_M>gesperrte Rolle</SCRTEXT_M>
+     <SCRTEXT_L>gesperrte Rolle von PFCG</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

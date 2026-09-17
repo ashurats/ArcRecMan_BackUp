@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZZ_CL_ARC_BAL_LOG_DETAILS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Klasse für Log Details Anzeige</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add Message</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LOG_DISPLAY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Log Details anzeigen</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MESSAGE</CMPNAME>
+     <SCONAME>IT_BAL_T_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application Log: Table with Messages</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG_DISPLAY</CMPNAME>
+     <SCONAME>IT_BAL_T_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application Log: Message Data</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

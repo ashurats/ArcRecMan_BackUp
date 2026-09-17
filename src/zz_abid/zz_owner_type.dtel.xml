@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZ_OWNER_TYPE</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZZ_OWNER_TYPE_DOMAIN</DOMNAME>
+    <HEADLEN>40</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>25</SCRLEN2>
+    <SCRLEN3>30</SCRLEN3>
+    <DDTEXT>Owner Type: (User, Mail)</DDTEXT>
+    <REPTEXT>Owner Type: (User, Mail)</REPTEXT>
+    <SCRTEXT_S>Owner Type</SCRTEXT_S>
+    <SCRTEXT_M>Owner Type</SCRTEXT_M>
+    <SCRTEXT_L>Owner Type: (User, Mail)</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZ_REASON</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZZ_REASON</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>40</HEADLEN>
+    <SCRLEN2>25</SCRLEN2>
+    <SCRLEN3>35</SCRLEN3>
+    <DDTEXT>Reason for adding Single Roles</DDTEXT>
+    <REPTEXT>Reason for adding Single Roles</REPTEXT>
+    <SCRTEXT_M>Reason for Role Add</SCRTEXT_M>
+    <SCRTEXT_L>Reason for adding Single Roles</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Grund für Hinzufügen von Einzelrollen</DDTEXT>
+     <REPTEXT>Grund für Hinzufügen von Einzelrollen</REPTEXT>
+     <SCRTEXT_M>Grund für Einzelroll</SCRTEXT_M>
+     <SCRTEXT_L>Grund für Hinzufügen von Einzelroll</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

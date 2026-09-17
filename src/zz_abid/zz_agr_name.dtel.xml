@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZ_AGR_NAME</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR30</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>40</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>25</SCRLEN2>
+    <SCRLEN3>30</SCRLEN3>
+    <DDTEXT>Composite Role</DDTEXT>
+    <REPTEXT>Composite Role</REPTEXT>
+    <SCRTEXT_S>Comp Role</SCRTEXT_S>
+    <SCRTEXT_M>Composite Role</SCRTEXT_M>
+    <SCRTEXT_L>Composite Role</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Sammel-Rolle</DDTEXT>
+     <REPTEXT>Sammel-Rolle</REPTEXT>
+     <SCRTEXT_S>Sammel-Rol</SCRTEXT_S>
+     <SCRTEXT_M>Sammel-Rolle</SCRTEXT_M>
+     <SCRTEXT_L>Sammel-Rolle</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

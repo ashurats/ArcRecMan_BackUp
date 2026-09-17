@@ -1,0 +1,4310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZZ_PFCG_MASS_TRANSPORT</NAME>
+    <SUBC>1</SUBC>
+    <APPL>S</APPL>
+    <RLOAD>D</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <CUA>
+    <ADM>
+     <ACTCODE>000001</ACTCODE>
+     <MENCODE>000004</MENCODE>
+     <PFKCODE>000002</PFKCODE>
+    </ADM>
+    <STA>
+     <RSMPE_STAT>
+      <CODE>MAIN</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>000001</ACTCODE>
+      <PFKCODE>000001</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>Main</INT_NOTE>
+     </RSMPE_STAT>
+     <RSMPE_STAT>
+      <CODE>POP_UP</CODE>
+      <MODAL>P</MODAL>
+      <PFKCODE>000002</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>&quot;Legend&quot; Dialog Box</INT_NOTE>
+     </RSMPE_STAT>
+    </STA>
+    <FUN>
+     <RSMPE_FUNT>
+      <CODE>%EX</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Exit</FUN_TEXT>
+      <PATH>X</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%PC</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>File...</FUN_TEXT>
+      <PATH>F</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%PRI</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_PRINT</TEXT_NAME>
+      <ICON_ID>@0X@</ICON_ID>
+      <FUN_TEXT>Print</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SC</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Find...</FUN_TEXT>
+      <PATH>F</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SC</CODE>
+      <TEXTNO>002</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SEARCH</TEXT_NAME>
+      <ICON_ID>@13@</ICON_ID>
+      <FUN_TEXT>Search</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SC+</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Find Next</FUN_TEXT>
+      <PATH>I</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%SL</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Office</FUN_TEXT>
+      <PATH>O</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>%ST</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Report Tree</FUN_TEXT>
+      <PATH>R</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Back</FUN_TEXT>
+      <PATH>B</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>LGND</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_ICON_LIST</TEXT_NAME>
+      <ICON_ID>@3D@</ICON_ID>
+      <FUN_TEXT>Legend</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_FIRST_PAGE</TEXT_NAME>
+      <ICON_ID>@2Y@</ICON_ID>
+      <FUN_TEXT>First Page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P+</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_NEXT_PAGE</TEXT_NAME>
+      <ICON_ID>@30@</ICON_ID>
+      <FUN_TEXT>Next Page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P++</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_LAST_PAGE</TEXT_NAME>
+      <ICON_ID>@31@</ICON_ID>
+      <FUN_TEXT>Last Page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>P-</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_PREVIOUS_PAGE</TEXT_NAME>
+      <ICON_ID>@2Z@</ICON_ID>
+      <FUN_TEXT>Previous Page</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>PICK</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SELECT_DETAIL</TEXT_NAME>
+      <ICON_ID>@16@</ICON_ID>
+      <FUN_TEXT>Choose</FUN_TEXT>
+      <PATH>W</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>PRI</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Print</FUN_TEXT>
+      <PATH>P</PATH>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>RW</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Cancel</FUN_TEXT>
+      <PATH>A</PATH>
+     </RSMPE_FUNT>
+    </FUN>
+    <MEN>
+     <RSMPE_MEN>
+      <CODE>000001</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>PRI</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000001</CODE>
+      <NO>02</NO>
+      <REF_TYPE>M</REF_TYPE>
+      <REF_CODE>000004</REF_CODE>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000001</CODE>
+      <NO>03</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%EX</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000002</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%SC</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000002</CODE>
+      <NO>02</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%SC+</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000002</CODE>
+      <NO>03</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>RW</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000003</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>BACK</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000004</CODE>
+      <NO>01</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%SL</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000004</CODE>
+      <NO>02</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%ST</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+     <RSMPE_MEN>
+      <CODE>000004</CODE>
+      <NO>03</NO>
+      <REF_TYPE>F</REF_TYPE>
+      <REF_CODE>%PC</REF_CODE>
+      <REF_NO>001</REF_NO>
+     </RSMPE_MEN>
+    </MEN>
+    <MTX>
+     <RSMPE_MNLT>
+      <CODE>000001</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>List</TEXT>
+      <PATH>L</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000002</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Edit</TEXT>
+      <PATH>E</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000003</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Goto</TEXT>
+      <PATH>G</PATH>
+     </RSMPE_MNLT>
+     <RSMPE_MNLT>
+      <CODE>000004</CODE>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT>Save/Send</TEXT>
+      <PATH>S</PATH>
+     </RSMPE_MNLT>
+    </MTX>
+    <ACT>
+     <RSMPE_ACT>
+      <CODE>000001</CODE>
+      <NO>01</NO>
+      <MENUCODE>000001</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000001</CODE>
+      <NO>02</NO>
+      <MENUCODE>000002</MENUCODE>
+     </RSMPE_ACT>
+     <RSMPE_ACT>
+      <CODE>000001</CODE>
+      <NO>03</NO>
+      <MENUCODE>000003</MENUCODE>
+     </RSMPE_ACT>
+    </ACT>
+    <BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>000001</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>01</NO>
+      <PFNO>13</PFNO>
+     </RSMPE_BUT>
+     <RSMPE_BUT>
+      <PFK_CODE>000002</PFK_CODE>
+      <CODE>0001</CODE>
+      <NO>01</NO>
+      <PFNO>00</PFNO>
+     </RSMPE_BUT>
+    </BUT>
+    <PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>02</PFNO>
+      <FUNCODE>PICK</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>RW</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>13</PFNO>
+      <FUNCODE>LGND</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>%EX</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>71</PFNO>
+      <FUNCODE>%SC</FUNCODE>
+      <FUNNO>002</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>80</PFNO>
+      <FUNCODE>P</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>81</PFNO>
+      <FUNCODE>P-</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>82</PFNO>
+      <FUNCODE>P+</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>83</PFNO>
+      <FUNCODE>P++</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>84</PFNO>
+      <FUNCODE>%SC+</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>86</PFNO>
+      <FUNCODE>%PRI</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000002</CODE>
+      <PFNO>00</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000002</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>RW</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+    </PFK>
+    <SET>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>%EX</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>%PC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>%PRI</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>%SC</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>%SC+</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>%SL</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>%ST</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>LGND</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>P</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>P+</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>P++</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>P-</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>PICK</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>PRI</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>MAIN</STATUS>
+      <FUNCTION>RW</FUNCTION>
+     </RSMPE_STAF>
+     <RSMPE_STAF>
+      <STATUS>POP_UP</STATUS>
+      <FUNCTION>BACK</FUNCTION>
+     </RSMPE_STAF>
+    </SET>
+    <DOC>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>A</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Main</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Main</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>B</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <SUB_CODE>0001</SUB_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Main</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>000002</OBJ_CODE>
+      <MODAL>P</MODAL>
+      <INT_NOTE>&quot;Legend&quot; Dialog Box</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>B</OBJ_TYPE>
+      <OBJ_CODE>000002</OBJ_CODE>
+      <SUB_CODE>0001</SUB_CODE>
+      <MODAL>P</MODAL>
+      <INT_NOTE>&quot;Legend&quot; Dialog Box</INT_NOTE>
+     </RSMPE_ATRT>
+    </DOC>
+    <TIT>
+     <RSMPE_TITT>
+      <CODE>POP_UP</CODE>
+      <TEXT>Legend</TEXT>
+     </RSMPE_TITT>
+    </TIT>
+   </CUA>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Selection of Roles</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>070</KEY>
+     <ENTRY>You are not authorized to transport roles</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>071</KEY>
+     <ENTRY>Optional Components</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>072</KEY>
+     <ENTRY>Single Roles in Composite Roles</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>073</KEY>
+     <ENTRY>Generated Profiles of Single Roles</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>074</KEY>
+     <ENTRY>Personalization Data</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>075</KEY>
+     <ENTRY>Direct User Assignments</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>076</KEY>
+     <ENTRY>Cross-System Object Lock</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>077</KEY>
+     <ENTRY>Separate CSOL Evaluation for Each Role</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>078</KEY>
+     <ENTRY>Test Mode</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>079</KEY>
+     <ENTRY>No Recording, Status Display Only</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>081</KEY>
+     <ENTRY>Status</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>082</KEY>
+     <ENTRY>Role</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>083</KEY>
+     <ENTRY>Type</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>084</KEY>
+     <ENTRY>Short Text</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>085</KEY>
+     <ENTRY>Composite Role</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>086</KEY>
+     <ENTRY>Single Role</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>087</KEY>
+     <ENTRY>Imparting Role</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>088</KEY>
+     <ENTRY>Error Message</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>089</KEY>
+     <ENTRY>Request</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>093</KEY>
+     <ENTRY>Single role recording not possible</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>094</KEY>
+     <ENTRY>Composite role recorded, but single role recording not possible</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>095</KEY>
+     <ENTRY>Recording of role possible, request of your choice</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>096</KEY>
+     <ENTRY>Recording of role possible, request already defined</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>097</KEY>
+     <ENTRY>Recording of role not possible</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>098</KEY>
+     <ENTRY>Error during recording of optional components</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>099</KEY>
+     <ENTRY>Role recorded, but optional components missing</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>100</KEY>
+     <ENTRY>Role recorded</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>101</KEY>
+     <ENTRY>Role not recorded</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>121</KEY>
+     <ENTRY>Cannot tranport any roles.</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>122</KEY>
+     <ENTRY>Request &amp;1 contains all green roles</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>123</KEY>
+     <ENTRY>Yellow roles are missing optional components</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>124</KEY>
+     <ENTRY>Green roles have been recorded successfully</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>125</KEY>
+     <ENTRY>If roles are yellow, see the status display text</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>126</KEY>
+     <ENTRY>If roles are gray, you can use the request of your choice</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>127</KEY>
+     <ENTRY>Simulation of Role Recording:</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Role Transport</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>AGR_NAME</KEY>
+     <ENTRY>Role</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Rollentransport</ENTRY>
+       <LENGTH>15</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Auswahl der Rollen</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>070</KEY>
+       <ENTRY>Keine Berechtigung zum Rollentransport</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>071</KEY>
+       <ENTRY>Optionale Bestandteile</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>072</KEY>
+       <ENTRY>Einzelrollen in Sammelrollen</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>073</KEY>
+       <ENTRY>Generierte Profile der Einzelrollen</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>074</KEY>
+       <ENTRY>Personalisierungsdaten</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>075</KEY>
+       <ENTRY>Direkte Benutzerzuordnungen</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>076</KEY>
+       <ENTRY>Systemübergreifende Objektsperre</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>077</KEY>
+       <ENTRY>Separate CSOL-Auswertung für jede Rolle</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>078</KEY>
+       <ENTRY>Testmodus</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>079</KEY>
+       <ENTRY>Keine Aufzeichnung, nur Statusanzeige</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>081</KEY>
+       <ENTRY>Status</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>082</KEY>
+       <ENTRY>Rolle</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>083</KEY>
+       <ENTRY>Typ</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>084</KEY>
+       <ENTRY>Kurztext</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>085</KEY>
+       <ENTRY>Sammelrolle</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>086</KEY>
+       <ENTRY>Einzelrolle</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>087</KEY>
+       <ENTRY>Vererbende Rolle</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>088</KEY>
+       <ENTRY>Fehlernachricht</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>089</KEY>
+       <ENTRY>Auftrag</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>093</KEY>
+       <ENTRY>Einzelrollenaufzeichnung nicht möglich</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>094</KEY>
+       <ENTRY>Sammelrolle aufgezeichnet, aber Einzelrollenaufzeichnung nicht möglich</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>095</KEY>
+       <ENTRY>Aufzeichnung der Rolle möglich, freie Auftragswahl</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>096</KEY>
+       <ENTRY>Aufzeichnung der Rolle möglich, Auftrag bereits festgelegt</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>097</KEY>
+       <ENTRY>Aufzeichnung der Rolle nicht möglich</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>098</KEY>
+       <ENTRY>Fehler bei Aufzeichnung optionaler Bestandteile</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>099</KEY>
+       <ENTRY>Rolle aufgezeichnet, aber optionale Bestandteile fehlen</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Rolle aufgezeichnet</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>Rolle nicht aufgezeichnet</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>121</KEY>
+       <ENTRY>Es können keine Rollen transportiert werden.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>122</KEY>
+       <ENTRY>Auftrag &amp;1 enthält alle grün markierten Rollen.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>123</KEY>
+       <ENTRY>Bei gelb markierten Rollen fehlen optionale Bestandteile.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>124</KEY>
+       <ENTRY>Die grün markierten Rollen wurden erfolgreich aufgezeichnet.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>125</KEY>
+       <ENTRY>Bei gelb markierten Rollen beachten Sie den Text der Statusanzeige.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>126</KEY>
+       <ENTRY>Für grau markierte Rollen besteht freie Auftragswahl.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>127</KEY>
+       <ENTRY>Simulation der Rollenaufzeichnung:</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>AGR_NAME</KEY>
+       <ENTRY>Rolle</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Sélection des rôles</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>070</KEY>
+       <ENTRY>Aucune autorisation pour le transport de rôles</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>071</KEY>
+       <ENTRY>Éléments facultatifs</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>072</KEY>
+       <ENTRY>Rôles individuels dans rôles composites</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>073</KEY>
+       <ENTRY>Profils générés des rôles individuels</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>074</KEY>
+       <ENTRY>Données de personnalisation</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>075</KEY>
+       <ENTRY>Mappages utilisateurs directs</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>076</KEY>
+       <ENTRY>Blocage d&apos;objet dans tout le système</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>077</KEY>
+       <ENTRY>Analyse CSOl séparée pour chaque rôle</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>078</KEY>
+       <ENTRY>Mode test</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>079</KEY>
+       <ENTRY>Aucun enregistrement, unqt affichage du statut</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>081</KEY>
+       <ENTRY>Statut</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>082</KEY>
+       <ENTRY>Rôle</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>083</KEY>
+       <ENTRY>Type</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>084</KEY>
+       <ENTRY>Désignation synth.</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>085</KEY>
+       <ENTRY>Rôle composite</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>086</KEY>
+       <ENTRY>Rôle individuel</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>087</KEY>
+       <ENTRY>Rôle cédant</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>088</KEY>
+       <ENTRY>Message d&apos;erreur</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>089</KEY>
+       <ENTRY>Ordre</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>093</KEY>
+       <ENTRY>Enregistrement des rôles individuels impossible</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>094</KEY>
+       <ENTRY>Rôle composite enregistré mais enregistrement des rôles individuels impossible</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>095</KEY>
+       <ENTRY>Enregistrement du rôle possible, sélection d&apos;ordres libre</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>096</KEY>
+       <ENTRY>Enregistrement du rôle possible, ordre déjà défini</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>097</KEY>
+       <ENTRY>Enregistrement du rôle impossible</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>098</KEY>
+       <ENTRY>Erreur lors de l&apos;enregistrement des composants facultatifs</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>099</KEY>
+       <ENTRY>Rôle enregistré mais des composants facultatifs manquent</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Rôle enregistré</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>Rôle non enregistré</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>121</KEY>
+       <ENTRY>Impossible de transporter un rôle</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>122</KEY>
+       <ENTRY>L&apos;ordre &amp;1 contient tous les rôles marqués en vert.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>123</KEY>
+       <ENTRY>Des composants facultatifs manquent pour les rôles marqués en orange.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>124</KEY>
+       <ENTRY>Les rôles marqués en vert ont été enregistrés correctement.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>125</KEY>
+       <ENTRY>Tenez compte du texte de l&apos;affichage du statut pour les rôles marqués en orange.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>126</KEY>
+       <ENTRY>Sélection d&apos;ordres libre pour les rôles marqués en gris.</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>127</KEY>
+       <ENTRY>Simulation de l&apos;enregistrement des rôles :</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Transport de rôles</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>AGR_NAME</KEY>
+       <ENTRY>Rôle</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>J</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>ロールの選択</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>070</KEY>
+       <ENTRY>ロールを移送する権限がありません</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>071</KEY>
+       <ENTRY>オプションコンポーネント</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>072</KEY>
+       <ENTRY>集合ロール内の単一ロール</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>073</KEY>
+       <ENTRY>単一ロールの生成済プロファイル</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>074</KEY>
+       <ENTRY>パーソナライゼーションデータ</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>075</KEY>
+       <ENTRY>直接ユーザ割当</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>076</KEY>
+       <ENTRY>システム間オブジェクトロック</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>077</KEY>
+       <ENTRY>ロールごとに CSOL 評価を区別</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>078</KEY>
+       <ENTRY>テストモード</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>079</KEY>
+       <ENTRY>記録なし、ステータス表示のみ</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>081</KEY>
+       <ENTRY>ステータス</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>082</KEY>
+       <ENTRY>ロール</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>083</KEY>
+       <ENTRY>タイプ</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>084</KEY>
+       <ENTRY>テキスト (短)</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>085</KEY>
+       <ENTRY>集合ロール</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>086</KEY>
+       <ENTRY>単一ロール</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>087</KEY>
+       <ENTRY>派生元ロール</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>088</KEY>
+       <ENTRY>エラーメッセージ</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>089</KEY>
+       <ENTRY>依頼</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>093</KEY>
+       <ENTRY>単一ロール記録不可</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>094</KEY>
+       <ENTRY>集合ロール記録済、単一ロール記録不可</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>095</KEY>
+       <ENTRY>ロールの記録不可、任意の依頼</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>096</KEY>
+       <ENTRY>ロールの記録可、依頼は定義済</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>097</KEY>
+       <ENTRY>ロールの記録不可</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>098</KEY>
+       <ENTRY>任意コンポーネントの記録中にエラー発生</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>099</KEY>
+       <ENTRY>ロール記録済、任意コンポーネントなし</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>ロール記録済</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>ロールの記録なし</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>121</KEY>
+       <ENTRY>いずれのロールも移送できません</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>122</KEY>
+       <ENTRY>依頼 &amp;1 には、緑色のロールがすべて含まれています</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>123</KEY>
+       <ENTRY>黄色のロールは、存在しない任意のコンポーネントです</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>124</KEY>
+       <ENTRY>緑色のロールは、正常に記録されています</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>125</KEY>
+       <ENTRY>ロールが黄色の場合は、ステータス表示テキストを参照してください</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>126</KEY>
+       <ENTRY>ロールが灰色の場合は、任意の依頼を使用することができます</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>127</KEY>
+       <ENTRY>ロール記録のシミュレーション:</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ロールの移送</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>AGR_NAME</KEY>
+       <ENTRY>ロール</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Selección de roles</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>070</KEY>
+       <ENTRY>Sin autorización para transporte de roles</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>071</KEY>
+       <ENTRY>Componentes opcionales</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>072</KEY>
+       <ENTRY>Roles simples en roles compuestos</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>073</KEY>
+       <ENTRY>Genera perfiles de roles individuales</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>074</KEY>
+       <ENTRY>Datos personalización</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>075</KEY>
+       <ENTRY>Asignaciones de usuario directas</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>076</KEY>
+       <ENTRY>Bloqueo de objetos válido para todos los sistemas</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>077</KEY>
+       <ENTRY>Valoración CSOL separada para cada rol</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>078</KEY>
+       <ENTRY>Modo test</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>079</KEY>
+       <ENTRY>Sin grabación, solo visualización de status</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>081</KEY>
+       <ENTRY>Status</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>082</KEY>
+       <ENTRY>Rol</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>083</KEY>
+       <ENTRY>Tipo</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>084</KEY>
+       <ENTRY>Texto breve</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>085</KEY>
+       <ENTRY>Rol compuesto</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>086</KEY>
+       <ENTRY>Rol simple</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>087</KEY>
+       <ENTRY>Rol que hereda</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>088</KEY>
+       <ENTRY>Mensaje de error</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>089</KEY>
+       <ENTRY>Orden</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>093</KEY>
+       <ENTRY>No se pueden grabar roles individuales</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>094</KEY>
+       <ENTRY>Rol compuesto grabado, pero no se pueden gabar roles individuales</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>095</KEY>
+       <ENTRY>Grabación de rol permitida, selección de orden libre</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>096</KEY>
+       <ENTRY>Grabación de roles permitida, orden ya especificada</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>097</KEY>
+       <ENTRY>Imposible grabar el rol</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>098</KEY>
+       <ENTRY>Error al grabar los componentes opcionales</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>099</KEY>
+       <ENTRY>Rol grabado, pero faltan componentes opcionales</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Rol grabado</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>101</KEY>
+       <ENTRY>Rol no grabado</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>121</KEY>
+       <ENTRY>No se puede transportar ningún rol</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>122</KEY>
+       <ENTRY>La orden &amp;1 contiene todos los roles marcados en verde</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>123</KEY>
+       <ENTRY>En los roles marcados en amarillo faltan componentes opcionales</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>124</KEY>
+       <ENTRY>Los roles marcados en verde se han grabado con éxito</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>125</KEY>
+       <ENTRY>Para los roles marcados en amarillo, considere el texto de visualiz.de status</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>126</KEY>
+       <ENTRY>Para los roles marcados en gris, dispone de la selección de orden libre</ENTRY>
+       <LENGTH>80</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>127</KEY>
+       <ENTRY>Simulación de grabación de roles:</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Transporte de roles</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>AGR_NAME</KEY>
+       <ENTRY>Rol</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZZ_PFCG_MASS_TRANSPORT</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00146</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZ_PFCG_MASS_TRANSPORT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit diesem Programm können Sie Rollen auf Transportaufträgen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufzeichnen. Es kann nur im Dialog, nicht jedoch im Hintergrund</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ausgeführt werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Aufzeichnung ist nur möglich, sofern folgende Voraussetzungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vorliegen:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Der ausführende Benutzer muss die Startberechtigung für Transaktion PFCG</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>haben (Berechtigungsobjekt S_TCODE). Andernfalls erfolgt kein</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Programmstart.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Die Rollen müssen im aktuellen Mandanten existieren und technisch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>korrekte Typdefinitionen (Einzelrolle oder Sammelrolle) aufweisen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Rollen ohne Typdefinition können durch Navigation in Transaktion PFCG</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automatisch repariert werden (siehe Hinweis 1723881).).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Der ausführende Benutzer muss die Transportberechtigung (Objekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>S_USER_AGR, ACTVT = 21) für die selektierten Rollen und deren vererbende</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Rollen haben.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Das Selektionsbild bietet neben der Standardselektion für Rollen die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Möglichkeit, per Ankreuzfeld folgende optionale Transportbestandteile</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>festzulegen (Kasten &quot;Optionale Bestandteile&quot;):</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Einzelrollen in Sammelrollen (Voreinstellung: aktiv)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Bei Wahl dieser Option werden alle in den selektierten Sammelrollen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enthaltenen Einzelrollen automatisch dem Auftrag hinzugefügt,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>andernfalls nur die Sammelrollen selbst.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Durch Einstellung des Schalters SGL_ROLES_TRANSPORT auf NO in Tabelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PRGN_CUST können Sie die Option systemweit deaktivieren.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Generierte Profile der Einzelrollen (Voreinstellung: aktiv)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Mit dieser Option entscheiden Sie, ob die selektierten und automatisch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufgezeichneten Einzelrollen zusammen mit den generierten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Berechtigungsprofilen transportiert werden. Um den Transport generierter</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Profile grundsätzlich zu deaktivieren, setzen Sie den Schalter</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PROFILE_TRANSPORT in Tabelle PRGN_CUST auf NO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Personalisierungsdaten (Voreinstellung: aktiv)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Zum Abschalten des Transports von Personalisierungsdaten steht in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Tabelle PRGN_CUST der Schalter PERSDAT_TRANSPORT mit dem Wert NO zur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verfügung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Direkte Benutzerzuordnungen (Voreinstellung: inaktiv)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Es werden alle direkten Benutzerzuordnungen der selektierten und</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automatisch ergänzten Rollen mittransportiert. Indirekte Zuordnungen aus</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sammelrollen oder dem HR-Organisationsmanagement bleiben</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>unberücksichtigt. Beachten Sie, dass der Import der Benutzerzuordnungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>alle vorherigen direkten Zuordnungen in den Zielmandanten ersetzt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Es findet kein Import der Benutzerzuordnungen in einen Zielmandanten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>statt, wenn</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>der Mandant Bestandteil (Zentral- oder Tochtersystem) einer Zentralen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Benutzerverwaltung ist, oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>das Zielsystem global gegen den Import von Benutzerzuordnungen gesperrt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ist, weil der Schalter US_ASGM_TRANSPORT in Tabelle PRGN_CUST auf NO</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>steht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Unter bestimmten Bedingungen stehen folgende zusätzliche Optionen zur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verfügung:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Sofern der Customizing-Schalter CLIENT_SET_FOR_ROLES in Tabelle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PRGN_CUST auf YES steht, kann im Kasten &quot;Testmodus&quot; die Option &quot;Keine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aufzeichnung, nur Statusanzeige&quot; gewählt werden, um die Aufzeichnung der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selektierten Rollen zu simulieren (Voreinstellung aktiv). Die Simulation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>beinhaltet nicht die Aufzeichnungsprozedur selbst, weil die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entsprechende Schnittstelle nicht gerufen wird.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Bei aktivem Testmodus sind die optionalen Transportbestandteile mit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ausnahme von &quot;Einzelrollen in Sammelrollen&quot; bedeutungslos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Falls der Mandat an ein Solution Manager-System angeschlossen und die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>systemübergreifende Objektsperre (CSOL) des &quot;Change and Request</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Managements&quot; (ChaRM) aktiv ist, sehen Sie die Option &quot;Separate</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CSOL-Auswertung für jede Rolle&quot; im Kasten &quot;Systemübergreifende</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Objektsperre&quot; (Voreinstellung inaktiv). Sie ermöglicht die Aufzeichnung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>von Rollen, die nicht von Objektsperren betroffen sind. Andernfalls</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>würde auch die Aufzeichnung unbeteiligter Rollen scheitern, sofern sie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf den gleichen Auftrag wie die global gesperrten Rollen geschrieben</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>werden sollen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Bei aktivem Testmodus ist die Wahl dieser Option wirkungslos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Weitere Detailinformationen über die beiden zuletzt genannten Optionen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entnehmen Sie dem Hinweis 1723881.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Bei Erfüllung der oben genannten Voraussetzungen führt der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Massentransport die Aufzeichnung der selektierten Rollen wie folgt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>durch:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Die vererbenden Rollen abgeleiteter Rollen werden automatisch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>berücksichtigt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Falls die Option &quot;Einzelrollen in Sammelrollen&quot; aktiv ist, findet die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aufzeichnung einer Sammelrolle nur dann statt, wenn alle enthaltenen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einzelrollen auf den gleichen Auftrag geschrieben werden können.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Falls wegen der globalen Customizing-Einstellung CLIENT_SET_FOR_ROLES =</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>YES nur ein offener Auftrag pro Rolle erlaubt ist, beeinflussen bereits</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>existierende Rollenaufzeichnungen das Ergebnis des Massentransports. Das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Programm ermittelt automatisch die zu verwendenden Aufträge und etwaige</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Auftragskonflikte.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Weitere Einzelheiten beschreibt Hinweis 1723881.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Beim Transport einer einzigen Rolle mit Hilfe der Transportfunktion im</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einstiegsbild der Transaktion PFCG kommt in Abhängigkeit vom Rollentyp</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eine der beide folgenden Standardvarianten zum Einsatz:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Einzelrolle: SAP&lt;(&gt;&amp;&lt;)&gt;SINGLE_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Definitionsgemäß ist in dieser Variante die Option zum Transport von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Einzelrollen in Sammelrollen nicht auswählbar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Sammelrolle: SAP&lt;(&gt;&amp;&lt;)&gt;COMP_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Beide Varianten erlauben keine manuelle Rollenselektion. Es wird jeweils</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>die im Einstiegsbild der PFCG eingetragene Rolle automatisch übernommen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Am Programmende erscheint ein Statusprotokoll. Pro Rolle enthält das</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Protokoll genau eine Zeile. Einzige Ausnahme sind Sammelrollen, deren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aufzeichnung aufgrund von Problemen in mehreren enthaltenen Einzelrollen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fehlschlägt. Für CLIENT_SET_FOR_ROLES = YES enthält das Protokoll die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zusätzliche Spalte &quot;Auftrag&quot;. Dort stehen die Auftragsnummern für</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erfolgreiche Aufzeichnungen im Normalmodus oder obligatorische</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Auftragsnummern im Testmodus.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zwischen Normal- und Testmodus variieren die Anzahl und Bedeutung der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>möglichen Status:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Normalmodus</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>grün</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Rolle wurde erfolgreich aufgezeichnet oder war bereits vor dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aktuellen Programmlauf aufgezeichnet worden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>gelb</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Aufzeichnung der Rolle selbst ist gelungen, nicht jedoch die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aufzeichnung aller gewünschten optionalen Bestandteile. Ein Klick auf</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>den Text in der Spalte &quot;Fehlernachricht&quot; liefert die Gründe, warum</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>welche Bestandteile fehlen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>rot</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Aufzeichnung der Rolle ist nicht möglich oder fehlgeschlagen. Die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fehlernachricht sowie die Detailangaben nach Klick auf den Text</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>informieren Sie über das aufgetretene Problem.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Testmodus</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>grün</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Rolle war bereits aufgezeichnet worden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>gelb</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Der Testmodus unterscheidet im Status gelb zwei verschiedenen Fälle:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Die nachträgliche Aufzeichnung der Einzelrollen in einer bereits</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aufgezeichneten Sammelrolle ist nicht möglich. Wiederum können Sie durch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Klick auf die Fehlernachricht Detailinformationen anzeigen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Die Aufzeichnung einer Rolle ist möglich, muss aber wegen Abhängigkeit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>von einer schon vorhandenen Aufzeichnung auf dem angegebenen Auftrag</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erfolgen. In diesem Fall liegt keine Fehlernachricht vor, so dass keine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Verwechslungsgefahr mit dem ersten Fall besteht.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>rot</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Aufzeichnung der Rolle ist nicht möglich. Welches Problem dafür</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verantwortlich ist, zeigen auch hier die Fehlernachricht sowie der Klick</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf den Text.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>neutral</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Die Aufzeichnung der Rolle ist bei freier Auftragswahl möglich. Eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>grüne Ampel wäre unpassend, denn es lässt sich nicht vorhersagen, ob die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Aufzeichnung selbst gelingt.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Beachten Sie, dass der Import von Sammelrollen die Anpassung der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indirekten Einzelrollenzuordnungen zu Benutzern in den Zielmandanten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>notwendig machen kann. Gleiches gilt für die Profilzuordnungen nach dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Import von Einzelrollen mit Profildaten. SAP empfiehlt daher die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Durchführung eines Benutzerabgleichs (Transaktion PFUD oder Report</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>RHAUTUPD_NEW) mit den Abgleichsarten &quot;Profilabgleich&quot; und &quot;Abgleich</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indirekter Zuordnungen aus Sammelrollen&quot; (&quot;Sammelrollenabgleich&quot;) in den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zielsystemen nach jedem Import von Rollen. Falls der Transport</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Benutzerzuordnungen einschließt, ist der Benutzerabgleich unabdingbar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Nach dem Import von Einzelrollen ohne Profile müssen vor dem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Benutzerabgleich die Profile in den Zielmandanten generiert werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Transaktion SUPC).</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZZ_PFCG_MASS_TRANSPORT</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <TXTLINES>00131</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZ_PFCG_MASS_TRANSPORT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You use this program to record roles to transport requests. This can</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>only be done in a dialog, not in the background.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Recording is only possible if the following prerequisites are met:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>The executing user must have start authorization for transaction PFCG</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(authorization object S_TCODE). If not, the program will not start.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>The roles must exist in the current client and have technically correct</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>type definitions (single role or composite role). You can repair roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>without a type definition automatically by navigating to transaction</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PFCG (see SAP Note 1723881).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>The executing user must have transport authorization (object S_USER_AGR,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ACTVT = 21) for the selected roles and their imparting roles.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In addition to the standard selection for roles, the selection screen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>allows the user to determine the following optional transport items by</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selecting checkboxes (&quot;Optional Components&quot; box):</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Single roles in composite roles (default setting: active)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>If you select this option, all single roles contained in the selected</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>composite roles are automatically added to the request. Otherwise, only</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the composite roles themselves are added.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>You can deactivate this option system-wide by setting the switch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>SGL_ROLES_TRANSPORT to NO in table PRGN_CUST.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Generated profiles of the single roles (default setting: active)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>You can use this option to determine whether the selected and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automatically added single roles are transported with their generated</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>authorization profiles. To deactivate the transport of generated</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>profiles, set the switch PROFILE_TRANSPORT in table PRGN_CUST to NO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Personalization data (default setting: active)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>To deactivate the transport of personalization data, you can set the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PERSDAT_TRANSPORT switch in the table PRGN_CUST to NO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Direct user assignments (default setting: inactive)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>All direct user assignments for the selected and automatically-added</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>roles are also transported. Indirect assignments from composite roles or</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>HR organizational management are not taken into account. Note that the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>import of user assignments replaces all previous direct assignments in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the target client.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>The user assignments are not imported into a target client if:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>The client is part of a Central User Administration (central system or</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>child system)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>The target system is globally locked against the import of user</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>assignments because switch US_ASGM_TRANSPORT in table PRGN_CUST has been</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>set to NO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In certain conditions, the following additional options are available:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If the Customizing switch CLIENT_SET_FOR_ROLES in table PRGN_CUST is set</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>to YES, you can select the option &quot;No Recording, Status Display Only&quot; in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the &quot;Test Mode&quot; box, to simulate the recording of the selected roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(default: active). The simulation does not include the actual recording</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>procedure, since it does not call the respective interface.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>If the test mode is active, the optional transport components are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>meaningless (with the exception of &quot;Single Roles in Composite Roles&quot;).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If the client is connected to a Solution Manager system and the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>cross-system object lock (CSOL) of &quot;Change and Request Management&quot; (</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>ChaRM) is active, you see the option &quot;Separate CSOL Evaluation for Each</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Role&quot; in the &quot;Cross-System Object Lock&quot; box (default: inactive). This</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>makes it possible to record roles that are not affected by object locks.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Otherwise, the recording of roles that are not affected would fail if</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>they were to be written to the same request as the globally locked</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>roles.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>If test mode is active, selecting this option has no effect.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>For more detailed information about the preceding two options, see SAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Note 1723881.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If the prerequisites mentioned above are met, the mass transport records</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the selected roles as follows:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>The imparting roles of derived roles are included automatically.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If the &quot;Single Roles in Composite Roles&quot; option is active, the recording</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>of a composite role only takes place if all its contained single roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>can be written to the same request.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>If only one open request is allowed per role because the global</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Customizing setting CLIENT_SET_FOR_ROLES = YES, the existing role re</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>cordings influence the result of the mass transport. The program</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>determines automatically which requests to use and any request conf</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>licts.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>For more information, see SAP Note 1723881.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>When transporting a role using the transport function on the initial</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>screen of transaction PFCG, one of the following standard variants is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>used, depending on the role type:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Single Role: SAP&lt;(&gt;&amp;&lt;)&gt;SINGLE_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>By definition, the option to transport single roles in composite roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>cannot be selected in this variant.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Composite Role: SAP&lt;(&gt;&amp;&lt;)&gt;COMP_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Neither variant permits manual role selection. In both cases, the role</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entered on the initial screen of PFCG is automatically used.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>At the end of the program, a status log is displayed. The log has one</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>line for each role, with the exception of composite roles whose</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recording has failed because of problems in several of its contained</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>single roles. If CLIENT_SET_FOR_ROLES = YES, the log contains the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>additional column &quot;Request&quot;. The request numbers in this column stand</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>for successful recordings in normal mode or obligatory request numbers</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in test mode.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The number and meaning of the various statuses are different in normal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and test mode:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Normal Mode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Green</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>The role was recorded successfully or had already been recorded before</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the current program was run.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Yellow</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>The role itself was recorded successfully but not all required optional</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>components were recorded. By clicking the text in the &quot;Error Message&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>column, you can find out which components are missing and why.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Red</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Recording of the role failed or was not possible. The error message and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the detailed information you get if you click the text provide</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>information about the problem that occurred.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Test Mode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Green</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>The role had already been recorded.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Yellow</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>In test mode, there are two different cases that can result in a yellow</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>status:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>It was not possible to record the single roles in a composite role that</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>had already been recorded. Again, to display more detailed information,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>click the error message.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Recording of a role was possible, but due to dependency on an existing</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recording it had to be recorded on the specified request. In this case</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>there is no error message, to avoid confusion with the first case.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Red</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Recording of the role is not possible. To find out why, see the error</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>message and click the text.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Neutral</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>It is possible to record the role with a request of your choice. A green</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>traffic light would not be appropriate because it is not possible to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>predict whether the recording will be successful.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Note that importing composite roles can make it necessary to adjust the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indirect single role assignments of users in the the target client. This</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>also applies for the profile assignments after the import of single</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>roles with profile data. We therefore recommend that you perform a user</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>comparison (transaction PFUD or report RHAUTUPD_NEW) with the comparison</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>types &quot;Profile Comparison&quot; and &quot;Compare Indirect Assignments from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Composite Roles&quot; (&quot;Composite Role Comparison&quot;) in the target system</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>after every import of roles. If the transport includes user assignments,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the user comparison is essential. After importing single roles without</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>profiles, you need to generate the profiles in the target client before</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the user comparison (transaction SUPC).</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZZ_PFCG_MASS_TRANSPORT</OBJECT>
+      <LANGU>F</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <TXTLINES>00153</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZ_PFCG_MASS_TRANSPORT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>F</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ce programme vous permet d&apos;enregistrer des rôles dans des ordres de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transport. Cette action peut être exécutée uniquement en mode dialogue</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>et non en arrière-plan.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>L&apos;enregistrement n&apos;est possible que si les conditions préalables</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>suivantes sont remplies :</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>L&apos;utilisateur chargé de l&apos;exécution doit disposer de l&apos;autorisation de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lancement pour la transaction PFCG (objet d&apos;autorisation S_TCODE).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Sinon, le programme ne peut pas être lancé.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Les rôles doivent exister dans le mandant actuel et avoir des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>définitions de types (rôle individuel ou composite) correctes d&apos;un point</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de vue technique (les rôles sans définition de type peuvent être réparés</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automatiquement en navigant dans la transaction PFCG (voir note</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>1723881).).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>L&apos;utilisateur chargé de l&apos;exécution doit disposer de l&apos;autorisation de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transport (objet S_USER_AGR, ACTVT = 21) pour les rôles sélectionnés et</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>leurs rôles cédants.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>L&apos;écran de sélection permet, outre la sélection standard de rôles, de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>déterminer via une case à cocher les éléments de transport facultatifs</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>suivants (case &quot;Composants facultatifs&quot;) :</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Rôles individuels dans des rôles composites (paramétrage : actif)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Si vous sélectionnez cette option, tous les rôles individuels compris</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dans les rôles composites sélectionnés sont ajoutés automatiquement à</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>l&apos;ordre ; sinon, seuls les rôles composites eux-mêmes sont ajoutés.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Le paramétrage du commutateur SGL_ROLES_TRANSPORT sur NO dans la table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PRGN_CUST vous permet de désactiver l&apos;option dans tout le système.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Profils générés des rôles individuels (paramétrage : actif)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Cette option vous permet de décider si les rôles individuels</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sélectionnés et automatiquement enregistrés sont transportés avec les p</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>rofils d&apos;autorisation générés. Pour désactiver fondamentalement le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transport de profils générés, activez la valeur NO du commutateur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PROFILE_TRANSPORT dans la table PRGN_CUST.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Données de personnalisation (paramétrage : actif)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Le commutateur PERSDAT_TRANSPORT avec la valeur NO et disponible dans la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table PRGN_CUST vous permet de désactiver le transport de données de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>personnalisation.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Affectations directes d&apos;utilisateurs (paramétrage : inactif)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Toutes les affectations directes d&apos;utilisateurs des rôles sélectionnés</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>et automatiquement complétés sont également transportées. Les</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>affectations indirectes à partir de rôles composites ou de la gestion de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>l&apos;organisation HR ne sont pas prises en compte. Notez que l&apos;importation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des affectations d&apos;utilisateurs remplace toutes les affectations</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>directes précédentes dans les mandants cibles.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Aucune importation des affectations d&apos;utilisateurs dans un mandant cible</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>n&apos;est effectuée si</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>le mandant est un élément (système cible ou central) d&apos;une</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>administration centrale des utilisateurs ou</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>le système cible global est bloqué contre l&apos;importation de mappages</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>utilisateur car le commutateur US_ASGM_TRANSPORT n&apos;a pas la valeur NO</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dans la table PRGN_CUST.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Les options supplémentaires suivantes sont à votre disposition sous</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>certaines conditions :</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si le commutateur de customizing CLIENT_SET_FOR_ROLES a la valeur YES</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dans la table PRGN_CUST, vous pouvez cocher l&apos;option &quot;Aucun en</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>registrement, uniquement affichage du statut&quot; dans la case &quot;Mode test&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>afin de simuler l&apos;enregistrement des rôles sélectionnés (paramétrage</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>actif). La simulation ne contient pas la procédure d&apos;enregistrement en</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>elle-même car le système n&apos;appelle pas l&apos;interface correspondante.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>En mode test actif, les composants de transport facultatifs n&apos;ont aucune</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>signification à l&apos;exception de &quot;Rôles individuels dans rôles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>composites&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si le mandat est connecté à un système SAP Solution Manager et que le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>blocage d&apos;objet dans tout le système (CSOL) de la &quot;gestion des demandes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de modification&quot; (CharRM) est actif, l&apos;option &quot;Analyse CSOL séparée pour</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>chaque rôle&quot; s&apos;affiche dans la case &quot;Blocage d&apos;objet dans tout le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>système&quot; (paramétrage actif). Elle permet d&apos;enregistrer les rôles qui ne</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sont pas concernés par les blocages d&apos;objet. Sinon, l&apos;enregistrement de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ces rôles échouerait également s&apos;ils devaient être écrits dans le même</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ordre que les rôles bloqués globalement.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>En mode test actif, sélectionner cette option reste sans effet.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Pour plus d&apos;informations détaillées sur les deux options citées</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>précédemment, consultez la note 1723881.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Si les conditions préalables citées ci-dessus sont remplies, le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transport en masse exécute l&apos;enregistrement des rôles sélectionnés de la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>manière suivante :</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Les rôles cédants des rôles déduits sont pris en compte automatiquement.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si l&apos;option &quot;Rôles individuels dans rôles composites&quot; est active,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>l&apos;enregistrement d&apos;un rôle composite a lieu uniquement si tous les rôles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>individuels contenus peuvent être écrits dans le même ordre.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si un seul ordre en cours est autorisé pour chaque rôle en raison du</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>paramétrage de Customizing global CLIENT_SET_FOR_ROLES = YES, les</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enregistrements de rôles déjà existants modifient le résultat du</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transport en masse. Le programme détermine automatiquement les ordres à</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>utiliser ainsi que les éventuels conflits d&apos;ordres.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Pour plus de détails, consultez la note 1723881.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Lors du transport d&apos;un seul rôle à l&apos;aide de la fonction de transport</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dans l&apos;écran initial de la transaction PFCG, l&apos;une des deux variantes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>standard suivantes est utilisée en fonction du type de rôle :</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Rôle individuel : SAP&lt;(&gt;&amp;&lt;)&gt;SINGLE_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Selon la définition, l&apos;option pour le transport de rôles individuels</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dans des rôles composites ne peut pas être sélectionnée dans cette</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>variante.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Rôle composite : SAP&lt;(&gt;&amp;&lt;)&gt;COMP_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Les deux variantes n&apos;autorisent aucune sélection manuelle de rôle. Les</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>rôles saisis dans l&apos;écran initial de la transaction PFCG sont</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automatiquement repris.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Un journal des statuts est affiché à la fin du programme. Le journal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>contient exactement une ligne par rôle. Les rôles composites dont</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>l&apos;enregistrement échoue en raison de problèmes survenant dans plusieurs</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>rôles individuels contenus constituent la seule exception. Pour</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CLIENT_SET_FOR_ROLES = YES, le journal contient la colonne</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>supplémentaire &quot;Ordre&quot;. Les numéros d&apos;ordres pour les enregistrements</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>corrects en mode normal ou les numéros d&apos;ordres obligatoires en mode</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>test figurent dans cette colonne.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Le nombre et la signification des statuts possibles varient selon le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mode normal ou test :</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mode normal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>vert</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Le rôle a été enregistré correctement ou avait déjà été enregistré avant</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>l&apos;actuelle exécution de programme.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>orange</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>L&apos;enregistrement du rôle lui-même a réussi mais pas celui de tous les</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>composants facultatifs souhaités. Pour connaître les raisons à l&apos;origine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de l&apos;absence de certains composants, cliquez sur le texte dans la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>colonne &quot;Message d&apos;erreur&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>rouge</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>L&apos;enregistrement du rôle est impossible ou a échoué. Le message d&apos;erreur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ainsi que les données détaillées s&apos;affichant après avoir cliqué sur le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>texte vous informent sur le problème survenu.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mode test</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>vert</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Le rôle avait déjà été enregistré.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>orange</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Le mode test distingue deux cas différents si le statut est orange :</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>L&apos;enregistrement a posteriori des rôles individuels dans un rôle</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>composite déjà enregistré n&apos;est pas possible. Dans ce cas également,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vous pouvez afficher des informations détaillées en cliquant sur le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>message d&apos;erreur.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>L&apos;enregistrement d&apos;un rôle est possible mais doit s&apos;effectuer dans</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>l&apos;ordre indiqué en raison de la dépendance avec un enregistrement déjà</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>existant. Dans ce cas, le système n&apos;édite aucun message d&apos;erreur ; vous</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ne risquez donc pas de le confondre avec le premier cas.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>rouge</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>L&apos;enregistrement du rôle est impossible. Le message d&apos;erreur ainsi que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>les informations s&apos;affichant en cliquant sur le texte indiquent les</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>raisons de ce problème.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>neutre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>L&apos;enregistrement du rôle est possible dans le cas d&apos;un choix d&apos;ordre</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>libre. Une icône de statut verte ne convient pas car il n&apos;est pas</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>possible de dire si l&apos;enregistrement lui-même réussira.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Notez que l&apos;importation de rôles composites peut rendre nécessaire</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>l&apos;ajustement des affectations indirectes de rôles individuels aux</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>utilisateurs dans les mandants cibles. Le même principe s&apos;applique pour</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>les affectations de profils après l&apos;importation de rôles individuels</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>avec données de profil. SAP recommande ainsi d&apos;exécuter une comparaison</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des utilisateurs (transaction PFUD ou programme RHAUTUPD_NEW) avec les</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>types de comparaison &quot;Comparaison de profils&quot; et &quot;Comparaison</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>d&apos;affectations indirectes à partir de rôles composites&quot; (&quot;Comparaison de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>rôles composites&quot;) dans les systèmes cibles après chaque importation de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>rôles. Si le transport inclut des affectations d&apos;utilisateurs, la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>comparaison des utilisateurs est indispensable. Après l&apos;importation de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>rôles individuels sans profils, les profils doivent être générés dans</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>les mandants cibles avant la comparaison des utilisateurs (transaction</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>SUPC).</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZZ_PFCG_MASS_TRANSPORT</OBJECT>
+      <LANGU>J</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <TXTLINES>00123</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZ_PFCG_MASS_TRANSPORT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>J</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>このプログラムを使用して、依頼を移送するためにロールを記録します。これは</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ダイアログに限って行うことができ、バックグラウンドでは実行できません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>記録は、以下の前提条件を満たしている場合に限り、実行することができます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>実行ユーザは、トランザクション PFCG (権限オブジェクト S_TCODE) の開始権</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>限を保有している必要があります。保有していない場合は、プログラムが開始さ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>れません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>現在のクライアントにロールが存在し、そのタイプ定義 (単一ロールまたは集合</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ロール) が技術的に正しいことが条件です。トランザクション PFCG (SAP ノー</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ト 1723881 参照) へのナビゲーションを行えば、タイプ定義がないロールを自</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>動的に修正させることができます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>実行ユーザは、選択したロールおよびその派生元ロールに関する移送権限 (オブ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ジェクト S_USER_AGR、ACTVT = 21) を保有している必要があります。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>ロールの標準選択に加え、選択画面ではチェックボックス (&quot;任意コンポーネン</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ト&quot; ボックス) を選択し、ユーザが以下の任意の移送項目を決定することができ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>集合ロールに含まれる単一ロール (デフォルト設定: 有効)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>このオプションを選択すると、選択した集合ロールに含まれるすべての単一ロー</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ルが依頼へ自動的に追加されます。それ以外の場合は、集合ロール自体のみが追</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>加されます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>このオプションは、テーブル PRGN_CUST でスイッチ SGL_ROLES_TRANSPORT を N</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>O に設定することによって、システム共通で無効化できます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>単一ロールに生成されたプロファイル (デフォルト設定: 有効)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>このオプションを使用すれば、選択し、自動的に追加された単一ロールを、その</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ロールに生成された権限プロファイルと一緒に移送するかどうかを指定できます</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>。生成されたプロファイルの移送を無効化するには、テーブル PRGN_CUST でス</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>イッチ PROFILE_TRANSPOR を NO に設定します。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>パーソナライゼーションデータ (デフォルト設定: 有効)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>パーソナライゼーションデータの移送を無効化するには、テーブル PRGN_CUST</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE> でスイッチ PERSDAT_TRANSPORT を NO に設定します。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>直接ユーザ割当 (デフォルト設定: 非有効)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>選択し、自動的に追加されたロールの直接ユーザ割当もすべて移送されます。集</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>合ロールや HR 組織管理からの間接ユーザ割当は対象外です。ユーザ割当をイン</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ポートすると、対象クライアントにすでにある直接割当がすべて置き換えられる</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ことに注意してください。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>ユーザ割当は、以下の場合は対象クライアントにインポートされません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>そのクライアントが集中ユーザ管理の一部 (セントラルシステムまたは子システ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ム) である場合</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>テーブル PRGN_CUST でスイッチ US_ASGM_TRANSPORT が NO に設定されているた</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>め、対象システムでユーザ割当のインポートがグローバルにロックされている場</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>合</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>状況によっては、以下の追加オプションが利用可能となります。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>テーブル PRGN_CUST のカスタマイジングスイッチ CLIENT_SET_FOR_ROLES が YE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>S に設定されている場合は、&quot;テストモード&quot; ボックスで &quot;記録なし、ステータ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ス表示のみ&quot; のオプションを選択し、選択したロールの記録に関するシミュレー</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ションを行うことができます (デフォルト: 有効)。対応するインタフェースが</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>呼び出されないことから、このシミュレーションに実際の記録手順は含まれませ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ん。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>テストモードが有効な場合は、任意移送コンポーネントが対象外となります (&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>集合ロール内の単一ロール&quot; は除く)。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>クライアントがソリューションマネージャシステムと接続されており、&quot;変更お</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>よび依頼管理&quot; (ChaRM) のシステム間オブジェクトロック (CSOL) が有効となっ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ている場合は、&quot;システム間オブジェクトロック&quot; ボックスに &quot;ロールごとの個</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>別 CSOL 評価&quot; オプションが表示されます (デフォルト: 非有効)。これにより</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>、オブジェクトロックの影響を受けないロールを記録できるようになります。そ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>れ以外の場合は、影響を受けないロールをグローバルでロックされたロールと同</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>じ依頼に書き込むと、そのロールを記録することができません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>テストモードが有効な場合は、このオプションを選択しても意味がありません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>先行する 2 つのオプションの詳細については、SAP ノート 1723881 を参照して</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ください。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>上記の前提条件を満たしている場合は、選択したロールの記録が一括移送で以下</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>のように行われます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>派生ロールの派生元ロールが自動的に含められます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>&quot;集合ロール内の単一ロール&quot; オプションが有効な場合、集合ロールの記録はこ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>れに含まれている単一ロールを同じ依頼に書き込むことが可能な場合に限り、行</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>われます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>グローバルカスタマイジング設定が CLIENT_SET_FOR_ROLES = YES となっている</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ためにロールごとに許可される未処理依頼が 1 つに制限される場合は、既存の</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ロール記録が一括移送の結果に影響します。このプログラムにより、使用される</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>依頼と依頼のコンフリクトが自動的に検出されます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>詳細については、SAP ノート 1723881 を参照してください。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>PFCG の第一画面で移送機能を使用してロールを移送する際、以下のいずれかの</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>標準バリアントがロールタイプに応じて使用されます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>単一ロール: SAP&lt;(&gt;&amp;&lt;)&gt;SINGLE_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>定義により、このバリアントでは集合ロール中の単一ロールを移送するオプショ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ンは選択できません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>集合ロール: SAP&lt;(&gt;&amp;&lt;)&gt;COMP_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>いずれのバリアントでもマニュアルロール選択はできません。どちらの場合も、</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PFCG の第一画面で入力したロールが自動的に使用されます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>プログラムの終了時にステータスログが表示されます。ログにはロールごとに 1</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE> 行が含まれますが、含まれている単一ロールの複数で問題が発生したために記</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>録に失敗した集合ロールは例外です。CLIENT_SET_FOR_ROLES = YES の場合は、</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ログに追加の列 &quot;依頼&quot; が含まれます。この列の依頼番号は、通常モードであれ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ば正常な記録を、テストモードであれば必須の依頼番号を意味します。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>さまざまなステータスの番号とその意味は、通常モードとテストモードで異なり</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>通常モード</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>緑</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>ロールは正常に記録されたか、または現在のプログラムが実行される前にすでに</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>記録されていました。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>黄</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>ロール自体は正常に記録されましたが、必須とされる任意コンポーネントの一部</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>が記録されませんでした。&quot;エラーメッセージ&quot; 列のテキストをクリックすると</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>、存在しないコンポーネントとその理由が表示されます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>赤</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>ロールの記録に失敗したか、または記録を行えませんでした。エラーメッセージ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>とテキストのクリックで表示される詳細情報により、発生した問題の情報を得る</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ことができます。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>テストモード</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>緑</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>ロールはすでに記録されています。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>黄</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>テストモードでは、黄色ステータスとなるケースは以下の 2 通りとなります。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>すでに記録されている集合ロール内の単一ロールを記録できませんでした。詳細</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>な情報は、エラーメッセージをクリックしてください。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>ロールの記録は行えませんでしたが、既存の記録との依存関係から、指定した依</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>頼にロールを記録する必要がありました。この場合は、初めのケースとの混同を</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>避けるため、エラーメッセージは表示されません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>赤</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>ロールの記録はできません。理由についてはエラーメッセージを参照し、テキス</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>トをクリックしてください。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>どちらでもない</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>任意の依頼でロールを記録することができます。記録が正常に行われるかどうか</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>は予測できないため、緑の信号は適切ではありません。</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>集合ロールのインポートによって、対象クライアントでユーザの間接単一ロール</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>割当に調整の必要が生じる場合があります。これは、単一ロールとプロファイル</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>データをインポートした後のプロファイル割当についても同様です。そのため、</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ロールをインポートした後は、毎回対象システムでユーザ比較 (トランザクショ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ン PFUD またはレポート RHAUTUPD_NEW) を比較タイプ &quot;プロファイル比較&quot; お</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>よび &quot;集合ロールからの間接割当の比較&quot; (&quot;集合ロール比較&quot;) を指定して実行</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>することをお奨めします。移送にユーザ割当が含まれている場合、ユーザ比較は</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>必須です。単一ロールをプロファイルなしでインポートした場合は、対象クライ</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>アントでユーザ比較 (トランザクション SUPC) の前にプロファイルを生成する</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>必要があります。</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZZ_PFCG_MASS_TRANSPORT</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0005</VERSION>
+      <TXTLINES>00148</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZ_PFCG_MASS_TRANSPORT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00005</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DESCRIPTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este programa permite grabar roles en órdenes de transporte. Sin</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>embargo, solo puede ejecutarse en modo de diálogo, no en proceso de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fondo.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PRECONDITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La grabación solo puede realizarse si se cumplen los requisitos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>siguientes:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>El usuario que ejecuta debe tener la autorización de inicio para la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transacción PFCG (objeto de autorización S_TCODE). De lo contrario, no</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se inicia el programa.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Los roles tienen que existir en los mandantes actuales y tienen que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mostrar una definición de tipo técnica correcta (roles individuales y</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>compuestos). (Los roles sin definición de tipo se pueden reparar de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>forma automática yendo a la transacción PFCG —vease la nota 1723881).)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>El usuarioq ue ejecuta debe tener la autorización de transporte (objeto</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>S_USER_AGR, ACTVT = 21)  para los roles seleccionados y los roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hereditarios.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La imagen de selección ofrece, junto con la selección estándar para</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>roles, la posibilidad de especificar los siguientes componentes de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transporte opcionales por casilla de selección (cuadro &quot;Componentes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>opcionales):</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Roles individuales en roles compuestos (parametrización previa: activa)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Si se selecciona esta opción, se añaden a la orden automáticamente todos</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>los roles individuales incluidos en roles compuestos seleccionados, de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lo contrario solamente se agregan los roles compuestos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Activando el conmutador SGL_ROLES_TRANSPORT  en NO en la tabla PRGN_CUST</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>puede desactivar la opción en todo el sistema.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Perfiles generados de los roles individuales (parametrización previa:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>activa)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Con esta opción decide si los roles individuales visualizados</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automáticamente y seleccionados se transportan junto con los perfiles de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>autorización generados. Para desactivar originalmente el transporte de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>perfiles generados, fije el flag PROFILE_TRANSPORT en la tabla PRGN_CUST</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en NO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Datos de personalización (parametrización previa: activa)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Para desactivar el transporte de datos de personalización dispone del</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>conmutador PERSDAT_TRANSPORT en la tabla PRGN_CUST con el valor NO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Asignaciones de usuario directas (parametrización previa: inactiva)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Se transportas todas las asignaciones de usuario de los roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>seleccionados y rellenados automáticamente. Las asignaciones indirectas</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de los roles compuestos o de la gestión organizativa de HR permanecen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sin confirmar. Tenga en cuenta que la importación de las asignaciones de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>usuario sustituye todas las asignaciones directas en el mandante</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>destino.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>No se produce ninguna importación de asignaciones de usuarios en un</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mandante destino si</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>el componente es un mandante (sistema central o subordinado) de una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gestión de usuarios central, o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>si el sistema destino se bloquea frente a la importación de asignaciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de usuarios, porque el flag US_ASGM_TRANSPORT está marcado en la tabla</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>PRGN_CUST en NO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En determinados casos, dispone de las siguientes opciones adicionales:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Siempre que el conmutador de Customizing CLIENT_SET_FOR_ROLES de la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tabla PRGN_CUST esté fijado en YES, se puede elegir la opción &quot;Sin</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>grabación, solo visualización de status&quot; en el cuadro &quot;Modo de test&quot;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>para simular la grabación de los roles seleccionados (parametrización</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>activa). La simulación no contiene el procedimiento de grabación en si</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mismo, dado que no se llama la interfase correspondiente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Cuando el modo de test está activo, los componentes de transporte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>opcionales no tienen importancia salvo &quot;Roles individuales en roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>compuestos&quot;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si el mandante está vinculado a un sistema SAP Solution Manager y el</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bloqueo de objetos válido para todo el sistema (CSOL) de la &quot;Gestión de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>solicitudes de modificación&quot; (ChaRM) está activo, vea la opción &quot;Separar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>valoración CSOL para cada rol&quot; en el cuadro &quot;Bloqueo de objetos válido</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>para todos los sistemas&quot; (parametrización inactiva).   Permite grabar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>roles no afectados por bloqueos de objeto.  De lo contrario, fallará</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>también la grabación de roles no implicados, siempre que se deban</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>escribir en la misma orden que los roles bloqueados globalmente</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Si el modo de test está activo, no tiene utilidad marcar esta opción.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Encontrará más información detallada de las dos últimas opciones en la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>nota SAP 1723881.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Si se cumplen los requisitos indicados, el transporte en masa realiza la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>grabación de los roles seleccionados como sigue:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Se consideran automáticamente los roles derivados de los roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hereditarios.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Si la opción &quot;Roles individuales en roles compuestos&quot; está activa, la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>grabación de un rol compuesto solo tendrá lugar si se pueden escribir</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>todos los roles individuales incluidos en la misma orden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>En caso de que a causa de la configuración de Customizing global</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>CLIENT_SET_FOR_ROLES = YES solo se permita una orden por rol, las g</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>rabaciones de roles ya existentes afectarán al resultado del transporte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en masa.  El programa determina de forma automática las órdenes a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>utilizar y los posibles  conflictos de órdenes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>En la nota 1723881 se detallan otras particularidades.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En el transporte de un rol único con la ayuda de la función de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>transporte en la imagen inicial de la transacción PFCG, una de las va</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>riantes estándar siguientes depende del tipo de rol en la asignación:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Roles individuales: SAP&lt;(&gt;&amp;&lt;)&gt;SINGLE_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Según la definición, en esta variante no se puede seleccionar la opción</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>para el transporte de roles individuales en los roles compuestos.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>Roles compuestos: SAP&lt;(&gt;&amp;&lt;)&gt;COMP_AGR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ninguna de las dos variantes experimenta ninguna selección manual. Se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>toman cada vez los roles introducidos en la imagen inicial de PFCG</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>automáticamente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En el fin del programa aparece un log de status. El log contiene una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>línea para cada rol.  Son excepciones los roles compuestos cuya</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>grabación falla a raíz de problemas en diversos roles individuales</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>contenidos.  Para CLIENT_SET_FOR_ROLES = YES, el log contiene la columna</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>adicional &quot;Orden&quot;. Allí constan los números de orden de las grabaciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>realizadas en modo normal o los números de orden obligatorios en modo de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>test.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Entre modo normal y modo de test varía la cantidad y el significado de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>los posibles status:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Modo normal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>verde</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>El rol se ha grabado con éxito o ya se había grabado antes de la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ejecución del programa actual.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>amarillo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>La grabación del rol ha tenido lugar, pero no la grabación de todos los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>componentes opcionales deseados.  Con un clic sobre el texto de la</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>columna &quot;Mensaje de error&quot;, se pueden ver los motivos de que falten los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>componentes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>rojo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>La grabación del rol no es posible o ha fallado.  El mensaje de error, y</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la entrada detallada tras hacer clic sobre el texto, le informan del</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>problema ocurrido.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Modo de test</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>verde</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>El rol ya se había grabado.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>amarillo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>En el modo de test, el status amarillo puede deberse a dos situaciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>distintas:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>La grabación posterior de los roles individuales en un rol compuesto ya</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>grabado no está permitida.  A su vez, puede consultar la información</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>detallada haciendo clic sobre el mensaje de error.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B2</TDFORMAT>
+       <TDLINE>Se puede grabar un rol, pero debe hacerse en la orden indicada a causa</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de la dependencia de una grabación ya existente.  En este caso, no</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>aparece ningún mensaje de error, a fin de que no haya peligro de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>confusión con el primer caso.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>rojo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>No se puede grabar el rol.   La causa se puede ver tanto en el mensaje</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de error como haciendo clic sobre el texto.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>neutral</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>El rol se puede grabar seleccionando una orden cualquiera. Un semáforo</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>en verde no sería adecuado, dado que no permite predecir si la grabación</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se ha realizado correctamente.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Tenga en cuenta que la importación de roles compuestos puede ser</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>necesario el ajuste de asignaciones de roles individuales indirectas a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>usuarios en los mandantes destino. Lo mismo vale para las asignaciones</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de perfiles tras la importación de roles individuales con datos de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>perfiles. Para ello, SAP recomienda la ejecución de un ajuste de usuario</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(transacción PFUD o report RHAUTUPD_NEW) con las clases de ajuste</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&quot;Ajuste de perfil&quot; y &quot;Ajuste de asignaciones indirectas de roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>compuestos&quot; (&quot;Ajuste de roles compuestos&quot;) en los sistemas destino</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>después de cada importación de roles. En caso que el transporte de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asignaciones de usuarios esté incluido, el ajuste de usuarios es</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>indispensable. Después de la importación de roles individuales sin</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>perfil, se tienen que generar los perfiles en los mandantes destino</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>antes del ajuste de usuarios.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
